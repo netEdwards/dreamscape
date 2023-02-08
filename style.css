@@ -1,0 +1,198 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+}
+
+.trnav {
+    z-index: 1;
+    position: sticky;
+    display: inline-flex;
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    border-bottom: solid 5px rgb(16, 99, 86);
+}
+.trnav ul {
+    display: inline-flex;
+    margin-right: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    list-style: none;
+}
+.rnav{
+    text-decoration: none;
+    color: rgb(92, 169, 193);
+    padding-left: 20px;
+}
+.rnav:hover{
+    color: rgba(195, 147, 246, 0.449);
+    font-size: 18px;
+}
+
+/*I am not proud of whats below but i got fed up >:(  */
+
+.dreambutton {
+    user-select: none;
+    display: flex;
+    height: 80px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.dreambutton a {
+    text-decoration: none;
+    color: rgb(92, 169, 193);
+}
+.dreambutton a {
+    color: rgb(92, 169, 193);
+    border: solid 2px;
+    padding: 5px;
+}
+.dreambutton a:hover{
+    font-size: 20px;
+    border: none;
+}
+.dreambutton a:active{
+    font-size: 14px;
+    border: none;
+}
+
+
+
+
+.mainbanner {
+    display: flex;
+    width: 100%;
+    max-height: 1080px;
+}
+.mainbanner .ldreamann {
+    display: inline-flex;
+    color: white; 
+    position: absolute;
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+}
+.ldreamann h1{
+    display: flex;
+    padding: 10px;
+    transition: 0.5s ease-out;
+    user-select: none;
+}
+.ldreamann h1:hover{
+    font-size: 40px;
+    transition: ease-in;
+    
+}
+@media only screen and (max-width: 600px) {
+    .ldreamann h1{
+        font-size: 16px;
+        padding: 5px;
+    }
+    .ldreamann h1:hover{
+        font-size: 20px;
+        transition: ease-in;
+        
+    }
+    
+}
+.mainbanner img {
+    width: 100%;
+    height: auto;
+    border-bottom: solid 5px rgb(16, 99, 86);
+    border-left: none;
+    border-right: none;
+}
+
+
+.whatis {
+    
+    display: flexbox;
+    color: rgb(92, 169, 193);
+    margin: 0 auto;
+    background-color: rgba(0, 255, 255, 0.119);
+    width: 85%;
+    border: solid 3px;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 10px auto;
+    
+}
+.whatis h3{
+    text-align: center;
+}
+.whatis p {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Grid Container (Just so i can center it in the body easily) -- I may remove the "whatis" -- */
+.homegridcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* Grid Setup */
+.spacer{
+    height: 20px;
+}
+.grid{
+    width: 90%;
+    height: 1000px;
+    display: grid;
+    justify-content: center;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+
+}
+.theidea{
+    display: flex;
+    background-color: rgb(16, 99, 86);
+    border-radius: 10px;
+    /* remove border and add this to the img when done sizing everything */
+    grid-area: 1 / 1 / 2 / 2;
+    justify-content: flex-start;
+    align-items: center;
+}
+.theidea img{
+    width: 300px;
+    height: 350px;
+    padding: 5px;
+    overflow: hidden;
+}
+.theidea h5{  
+    font-weight: bolder;
+    margin: 9px;
+    font-size: 18px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+.theidea img:hover{
+    
+}
+
+.ideatext {
+    display: flex;
+    border-top: solid 2px rgb(92, 169, 193);
+    border-bottom: solid 2px rgb(92, 169, 193);
+    grid-area: 1 / 2 / 2 / 4;
+    justify-content: center;
+    align-items: center;
+}
+.ideatext h5{
+    font-size: 18px;
+    color: rgb(92, 169, 193);
+    width: 85%;
+    text-align: center;
+    word-spacing: 3px;
+    line-height: 25px;
+}
