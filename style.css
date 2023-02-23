@@ -1,9 +1,11 @@
 html, body {
     margin: 0;
     padding: 0;
+    min-width: 600px;
 }
 
 html {
+
     font-family: 'Raleway';
     font-size: 16px;
     font-weight: bold;
@@ -95,11 +97,11 @@ html {
 }
 @media only screen and (max-width: 600px) {
     .ldreamann h1{
-        font-size: 16px;
+        font-size: 20px;
         padding: 5px;
     }
     .ldreamann h1:hover{
-        font-size: 20px;
+        font-size: 23px;
         transition: ease-in;
         
     }
@@ -156,44 +158,87 @@ html {
 
 }
 .theidea{
+    max-height: 370px;
     display: flex;
-    background-color: rgb(16, 99, 86);
-    border-radius: 10px;
+    border: 2px solid white;
+    border-right: none;
+    border-radius: 10px 0px 0px 10px ;
     /* remove border and add this to the img when done sizing everything */
     grid-area: 1 / 1 / 2 / 2;
     justify-content: flex-start;
     align-items: center;
 }
 .theidea img{
+    
+    border-radius: 10px;
     width: 300px;
     height: 350px;
     padding: 5px;
     overflow: hidden;
 }
 .theidea h5{  
+    color: white;
     font-weight: bolder;
     margin: 9px;
     font-size: 18px;
     writing-mode: vertical-lr;
     text-orientation: upright;
 }
-.theidea img:hover{
-    
-}
 
 .ideatext {
-    display: flex;
-    border-top: solid 2px rgb(92, 169, 193);
-    border-bottom: solid 2px rgb(92, 169, 193);
-    grid-area: 1 / 2 / 2 / 4;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    display: flex;
+    border-top: solid 1px rgb(92, 169, 193);
+    
+    grid-area: 1 / 2 / 1 / 2;
 }
 .ideatext h5{
+    align-self: center;
+    max-height: 370px;
+    min-width: 200px;
+    text-overflow: clip;
     font-size: 18px;
     color: rgb(92, 169, 193);
-    width: 85%;
+    max-width: 85%;
     text-align: center;
     word-spacing: 3px;
     line-height: 25px;
+}
+.how {
+    max-height: 370px;
+    grid-area: 2 / 2 / 2 / 2;
+    display: flex;
+    border-top: solid 1px rgb(92, 169, 193);
+    border-bottom: solid 1px rgb(92, 169, 193);
+    
+}
+.howtext
+{
+    min-width: 300px;
+    padding: 10px 20px;
+    font-size: 25px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: rgb(92, 169, 193);
+}
+.how2{
+    max-height: 370px;
+    grid-area: 2 / 3 / 2 / 3;
+    display: flex;
+    border:2px solid  rgb(255, 255, 255);
+    border-radius: 0px 10px 10px 00px;
+    border-left: none;
+    justify-items: center;
+    align-items: center;
+}
+.how2 h5{
+    min-width: 300px;
+    max-height: 370px;
+    color: aliceblue;
+    text-align: center;
+    line-height: 25px;
+    font-size: 22px;
 }
